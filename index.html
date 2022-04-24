@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Application - DOM</title>
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+    <div class="todo__container">
+        <div class="relativeBtn_container"></div>
+      <div class="date__container"><i>Thursday, 21 April 22</i></div>
+
+      <h1> Reewazz's ToDo List</h1>
+
+      <div class="tasks">
+        <div class="task__container" id="1">
+          <p class="taskName">Complete ToDo using DOM</p>
+          <!-- <input type="checkbox" name="Checklist" id = "newTask" /> -->
+          <input type="checkbox" name="Checklist" id = "1" onchange="markComplete(this)" />
+
+        </div>
+        
+          <div class="task__container" id="2">
+          <p class="taskName">Help Gaire for NASA Hacking</p>
+          <input type="checkbox" name="Checklist" id = "2" onchange="markComplete(this)" />
+        </div>
+      </div>
+
+     
+      <input type="text" class="newTask__container" placeholder="Add Task..." id = "newTask"/>
+      <button class="submitTaskBtn__container" id = "submitBtn" onclick="addTask()">+</button>
+    </div>
+    <script defer src="./script.js"></script>
+    
+  </body>
+</html>
